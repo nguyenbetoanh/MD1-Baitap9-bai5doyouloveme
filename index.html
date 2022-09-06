@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body{
+      background-image: url('https://th.bing.com/th/id/R.921607639ee39e08c8e9107cc3131d9c?rik=QNpQSYT%2fw8KSDg&riu=http%3a%2f%2f2.bp.blogspot.com%2f-69cU_lI1OHg%2fUWzKPnVawgI%2fAAAAAAAAGRs%2ft2f764Uvuus%2fs1600%2fanh-dep-ve-tinh-yeu-10.jpg&ehk=igOLlTDFkykCnksL0qov50SXu9SSvYEUEA5sqxQcrIk%3d&risl=&pid=ImgRaw&r=0');
+    }
+    button{
+      position: absolute;
+    }
+    .button1{
+      width: 100px;
+      height: 100px;
+      font-size: xx-large;
+      color: red;
+      background: blue;
+    }
+    .button2 {
+      width: 100px;
+      height: 100px;
+      top: 400px;
+      let: 400px;
+      font-size: xx-large;
+      color: blue;
+      background: red;
+    }
+    h1{
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+<button onclick="bamNut1()"id="nut1"class="button1">yes </button>
+<button onmouseover="bamNut2()"id="nut2"class="button2"> no</button>
+<script>
+  function bamNut1() {
+    document.getElementById('nut1').innerHTML = '<h1 style="color: red;background: lightblue">Kiếp sau mình trả hihi</h1>'
+  }
+  function bamNut2() {
+    let chieuDai = Math.floor(Math.random() * innerHeight)
+    let chieuNgang = Math.floor(Math.random() * innerWidth)
+    document.getElementById('nut2').style.top = chieuDai + 'px'
+    document.getElementById('nut2').style.left = chieuNgang + 'px'
+  }
+</script>
+</body>
+</html>
